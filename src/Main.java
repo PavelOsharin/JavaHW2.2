@@ -2,16 +2,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        int AccountBalance = 100; // баланс счета
-        int DepositAmount = 1100; // сумма пополнения
-        int BonusMoney = DepositAmount / 100; // бонусные рубли
-        int AccountBalanceAfterReplenishment;
-        if (DepositAmount > 1000) {
-            AccountBalanceAfterReplenishment = (AccountBalance + DepositAmount + BonusMoney);
+        int accountBalance = 100; // баланс счета
+        int depositAmount = 1100; // сумма пополнения
+        int bonusMoney = depositAmount / 100; // бонусные рубли
+        int accountBalanceAfterReplenishment;
+        if (depositAmount > 1000) {
+            accountBalanceAfterReplenishment = (accountBalance + depositAmount + bonusMoney);
         } else {
-            AccountBalanceAfterReplenishment = (AccountBalance + DepositAmount);
+            accountBalanceAfterReplenishment = (accountBalance + depositAmount);
         }
         ;
-        System.out.println("Итого на балансе: " + AccountBalanceAfterReplenishment + " рублей.");
+        System.out.println("Итого на балансе: " + accountBalanceAfterReplenishment + " рублей.");
     }
 }
